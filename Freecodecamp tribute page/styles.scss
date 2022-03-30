@@ -7,18 +7,19 @@
 }
 
 #main{
- margin:1rem auto;
- padding: 4rem 1rem;
- border: $border ;
- width: 98%;
+ margin:1rem auto ;
+ padding: 4rem 1rem 1rem 1rem;
+ // border: $border ;
+ width: 99%;
  background-color: $primaryColor;
-
+border-radius: 10px;
  h1{
   margin-bottom: 2rem;
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 4vw, 2.8rem);
  }
  p{
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  font-size: $lightFonts;
  }
 
  figure{
@@ -33,35 +34,39 @@
   }
 figcaption{
  margin: 1rem 0;
+ font-size: $lightFonts;
 }
  }
  h2{
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0 2.2rem 0;
  }
 
  .aboutLife{
   // border: $border;
   max-width: 570px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   text-align: left;
   P{
    text-align: left;
+   margin-top: 2.2rem;
   }
-
+span{
+ font-size: $lightFonts;
+}
   ul{
    // border: $border;
    list-style-position: outside;
    padding-left: 0;
-   
   }
   li{
    text-align: left;
    margin-bottom: 1rem;
-
+font-size: $lightFonts;
   }
  }
  h3{
   margin-top: 3rem;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
  }
 }
