@@ -1,0 +1,67 @@
+@import "config";
+*{
+ box-sizing: border-box;
+ margin: 0;
+ // padding: 0;
+ text-align: center;
+}
+
+#main{
+ margin:1rem auto;
+ padding: 4rem 1rem;
+ border: $border ;
+ width: 98%;
+ background-color: $primaryColor;
+
+ h1{
+  margin-bottom: 2rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+ }
+ p{
+  margin-bottom: 1rem;
+ }
+
+ figure{
+  overflow: auto;
+  // border: $border;
+  background-color: white;
+  img{
+   margin-top: clamp(0.5rem, 1.5vw, 1rem);
+   max-width: 65.625rem;
+   width: 96%;
+   // border: $border;
+  }
+figcaption{
+ margin: 1rem 0;
+}
+ }
+ h2{
+  margin: 2rem 0 2rem 0;
+ }
+
+ .aboutLife{
+  // border: $border;
+  max-width: 570px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  P{
+   text-align: left;
+  }
+
+  ul{
+   // border: $border;
+   list-style-position: outside;
+   padding-left: 0;
+   
+  }
+  li{
+   text-align: left;
+   margin-bottom: 1rem;
+
+  }
+ }
+ h3{
+  margin-top: 3rem;
+ }
+}
