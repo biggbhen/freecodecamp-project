@@ -9,3 +9,24 @@
 // This is the power of a getter and a setter. You are creating an API for another user, who can get the correct result regardless of which one you track.
 
 // In other words, you are abstracting implementation details from the user.
+
+class Thermostat {
+  constructor(temperature) {
+    this._temperature = (5 / 9) * (temperature - 32);
+  }
+  // getter
+  get temperature() {
+    return this._temperature;
+  }
+  // setter
+  set temperature(temp) {
+    this._temperature = temp;
+  }
+}
+
+const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+let temp = thermos.temperature; // 24.44 in Celsius
+thermos.temperature = 26;
+temp = thermos.temperature; // 26 in Celsius
+
+console.log(temp);
